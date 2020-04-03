@@ -1,9 +1,16 @@
+
 package com.crio.warmup.stock;
 
+<<<<<<< HEAD
 import com.crio.warmup.stock.dto.AnnualizedReturn;
 import com.crio.warmup.stock.dto.CustomTicker;
 import com.crio.warmup.stock.dto.PortfolioTrade;
 import com.crio.warmup.stock.dto.TiingoCandle;
+=======
+
+import com.crio.warmup.stock.dto.AnnualizedReturn;
+import com.crio.warmup.stock.dto.PortfolioTrade;
+>>>>>>> d971b7b232f24496ccc38eec32e1a60118fa4af6
 import com.crio.warmup.stock.dto.TotalReturnsDto;
 import com.crio.warmup.stock.log.UncaughtExceptionHandler;
 import com.crio.warmup.stock.portfolio.PortfolioManager;
@@ -13,6 +20,7 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
+<<<<<<< HEAD
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -22,6 +30,15 @@ import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
+import java.util.UUID;
+import java.util.logging.Logger;
+=======
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.UUID;
@@ -29,12 +46,14 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+>>>>>>> d971b7b232f24496ccc38eec32e1a60118fa4af6
 import org.apache.logging.log4j.ThreadContext;
 import org.springframework.web.client.RestTemplate;
 
 
 public class PortfolioManagerApplication {
 
+<<<<<<< HEAD
   // TODO: CRIO_TASK_MODULE_JSON_PARSING
   // Read the json file provided in the argument[0]. The file will be avilable in
   // the classpath.
@@ -222,12 +241,15 @@ public class PortfolioManagerApplication {
 
 
 
+=======
+>>>>>>> d971b7b232f24496ccc38eec32e1a60118fa4af6
 
 
 
 
 
 
+<<<<<<< HEAD
   
 
   public static List<AnnualizedReturn> mainCalculateSingleReturn(String[] args)
@@ -360,6 +382,16 @@ public class PortfolioManagerApplication {
     //ObjectMapper objectMapper = getObjectMapper();
     return portfolioManager.calculateAnnualizedReturn(Arrays.asList(portfolioTrades), endDate);
   }
+=======
+
+
+
+
+
+
+
+
+>>>>>>> d971b7b232f24496ccc38eec32e1a60118fa4af6
 
 
   public static void main(String[] args) throws Exception {
@@ -369,6 +401,10 @@ public class PortfolioManagerApplication {
 
 
 
+<<<<<<< HEAD
     printJsonObject(mainCalculateReturnsAfterRefactor(args));
+=======
+>>>>>>> d971b7b232f24496ccc38eec32e1a60118fa4af6
   }
 }
+
